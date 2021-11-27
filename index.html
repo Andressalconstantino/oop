@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <h1> Store</h1>
+    </header><hr>
+    <main>
+        <div class="title">
+            <h2>Products</h2>
+            <span>Products List</span>
+        </div>
+
+        <div class="card">
+
+            <div class="lineInput">
+                <label>Product</label>
+                <input type="text" id="product" placeholder="Product Name">
+            </div>
+
+            <div class="lineInput">
+                <label>Price</label>
+                <input type="text" id="price" placeholder="Product Price">
+            </div>
+
+
+            <button onclick="product.save()"><b>Save</b></button>
+            <button onclick="product.cancel()"><b>Cancel</b></button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Value </th>
+                <th>Actions</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>
