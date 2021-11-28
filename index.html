@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +29,12 @@
 
             <div class="lineInput">
                 <label>Price</label>
-                <input type="text" id="price" placeholder="Product Price">
+                <input type="number" id="price" placeholder="Product Price">
             </div>
 
 
-            <button onclick="product.save()"><b>Save</b></button>
-            <button onclick="product.cancel()"><b>Cancel</b></button>
+            <button id="save" onclick="product.save()">Save</button>
+            <button onclick="product.cancel()">Cancel</button>
         </div>
 
         <div class="content">
